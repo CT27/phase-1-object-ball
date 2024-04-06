@@ -1,4 +1,3 @@
-function gameObject() {}
 const teams = {
   home: {
     teamName: "Brookly Nets",
@@ -61,6 +60,71 @@ const teams = {
       },
     ],
   },
+  away: {
+    teamName: "Charlotte Hornets",
+    colors: ["Turquoise", "Purple"],
+    players: [
+      {
+        name: "Jeff Adrien",
+        number: "4",
+        shoe: "14",
+        points: "10",
+        rebounds: "1",
+        assists: "1",
+        blocks: "2",
+        steals: "7",
+        slamDunks: "2",
+      },
+      {
+        name: "Bismak Biyombo",
+        number: "0",
+        shoe: "16",
+        points: "12",
+        rebounds: "4",
+        assists: "7",
+        blocks: "7",
+        steals: "15",
+        slamDunks: "10",
+      },
+      {
+        name: "DeSagna Diop",
+        number: "2",
+        shoe: "14",
+        points: "24",
+        rebounds: "12",
+        assists: "12",
+        steals: "4",
+        blocks: "5",
+        slamDunks: "5",
+      },
+      {
+        name: "Ben Gordon",
+        number: "8",
+        shoe: "15",
+        points: "33",
+        rebounds: "3",
+        assists: "2",
+        steals: "1",
+        blocks: "1",
+        slamDunks: "0",
+      },
+      {
+        name: "Brendan Haywood",
+        number: "33",
+        shoe: "15",
+        points: "6",
+        rebounds: "12",
+        assists: "12",
+        steals: "22",
+        blocks: "5",
+        slamDunks: "12",
+      },
+    ],
+  },
 };
 
-console.log(teams);
+function gameObject() {
+  return teams;
+}
+
+console.log(gameObject());
