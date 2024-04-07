@@ -1,6 +1,7 @@
+//1.
 const teams = {
   home: {
-    teamName: "Brookly Nets",
+    teamName: "Brooklyn Nets",
     colors: ["Black", "White"],
     players: [
       {
@@ -127,4 +128,46 @@ function gameObject() {
   return teams;
 }
 
-console.log(gameObject());
+// console.log(gameObject());
+
+const homePlayers = teams.home.players;
+const awayPlayers = teams.away.players;
+
+//2.
+function numPointsScored() {
+  // Loop through home players
+  for (let i = 0; i < homePlayers.length; i++) {
+    // Check if the player's name matches
+    if (homePlayers[i].name === "Alan anderson") {
+      // Return the points scored by the player
+      return parseInt(homePlayers[i].points);
+    }
+  }
+}
+// console.log(numPointsScored("Alan anderson"));
+
+//3.
+function shoeSize() {
+  // Loop through home players
+  for (let i = 0; i < homePlayers.length; i++) {
+    // Check if the shoe size matches
+    if (homePlayers[i].name === "Reggie Evans") {
+      // Return the shoe size by the player
+      return parseInt(homePlayers[i].shoeSizes);
+    }
+  }
+} // Loop through away players
+
+//     // If player not found among home players, loop through away players
+//     for (let i = 0; i < awayPlayers.length; i++) {
+//       // Check if the player's name matches
+//       if (awayPlayers[i].name === "Reggie Evans") {
+//         // Return the shoe size scored by the player
+//         return parseInt(awayPlayers[i].shoeSize);
+//       }
+//     }
+//     return "Player not found";
+//   }
+// }
+
+console.log(shoeSize("Reggie Evans"));
