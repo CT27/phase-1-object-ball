@@ -147,27 +147,14 @@ function numPointsScored() {
 // console.log(numPointsScored("Alan anderson"));
 
 //3.
-function shoeSize() {
-  // Loop through home players
-  for (let i = 0; i < homePlayers.length; i++) {
-    // Check if the shoe size matches
-    if (homePlayers[i].name === "Reggie Evans") {
-      // Return the shoe size by the player
-      return parseInt(homePlayers[i].shoeSizes);
-    }
-  }
-} // Loop through away players
 
-//     // If player not found among home players, loop through away players
-//     for (let i = 0; i < awayPlayers.length; i++) {
-//       // Check if the player's name matches
-//       if (awayPlayers[i].name === "Reggie Evans") {
-//         // Return the shoe size scored by the player
-//         return parseInt(awayPlayers[i].shoeSize);
-//       }
-//     }
-//     return "Player not found";
-//   }
-// }
+////NOTES
+// use the for of to iterate properties of object and return properties
+for (const players of homePlayers) {
+  console.log(players.name);
+}
 
-console.log(shoeSize("Reggie Evans"));
+//use for in to iterate and return keys
+for (const key in homePlayers) {
+  console.log(key);
+}
